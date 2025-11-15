@@ -65,7 +65,7 @@ function draw() //  draw function loops forever at frame rate
   r = map(sensors[2], 0, 1023, 0, 255); //map pot 1 to red value
   g = map(sensors[3], 0, 1023, 0, 255); //map pot 2 to green value
   b = sensors[0] * 255; // map button 1 to blue value (0 or 255)
-  rotateR = map(sensors[3], 0, 1023, 0.00, 0.9);
+  rotateR = map(sensors[3], 0, 1023, 0.00, 0.5);
 
   background(r , g, b);  // fill frame w/ background color, also using button 2 to turn off green component.
 
